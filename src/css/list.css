@@ -1,0 +1,44 @@
+.people-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#search-form {
+  font-size: 1.15rem;
+}
+
+#search-form input {
+  padding: 0.25rem 0.5rem;
+  min-width: 17rem;
+  text-align: center;
+  border-radius: 0.25rem;
+  border-width: 1px;
+}
+
+.people-list table {
+  table-layout: fixed;
+  border-collapse: collapse;
+  text-align: center;
+}
+
+.people-list table td,
+.people-list table th {
+  border: 1px solid rgb(100, 100, 100);
+  padding: 0.5rem;
+}
+
+.people-list table td button {
+  cursor: pointer;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 0.25rem;
+  color: rgb(0, 0, 0);
+  background-color: rgba(197, 36, 36, 0.253);
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.people-list table td button:hover {
+  transform: scale(1.05);
+  background-color: rgba(190, 55, 55, 0.534);
+}

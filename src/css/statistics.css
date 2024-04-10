@@ -1,0 +1,12 @@
+.statistics .content {
+  display: flex;
+  gap: 2rem;
+}
+
+.statistics .content dt {
+  font-weight: 600;
+}
+
+.statistics .content dd {
+  margin-bottom: 0.5rem;
+}

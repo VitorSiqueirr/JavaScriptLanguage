@@ -1,0 +1,32 @@
+.input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.input-form label {
+  font-size: 1.2rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.input-form input,
+.input-form select {
+  min-width: 15rem;
+  max-width: 20rem;
+  border-radius: 0.25rem;
+  border-width: 1px;
+  padding: 0.25rem 0.5rem;
+}
+
+.input-form select {
+  transform: translateX(2px);
+}
+
+.input-form input.xl {
+  min-width: 20rem;
+}

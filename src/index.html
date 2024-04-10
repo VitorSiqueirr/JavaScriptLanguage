@@ -1,0 +1,154 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio de JavaScript</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <h1 class="header">Lista de usuários</h1>
+    
+    <section class="add-people">
+      <h3 class="sub-title">Adicionar pessoa</h3>
+
+      <form class="input-form">
+        <label>
+          Nome:
+          <input name="name" type="text" minlength="5" required />
+        </label>
+
+        <label>
+          Idade:
+          <input name="age" type="number" min="1" max="100" required />
+        </label>
+
+        <label>
+          Sexo:
+          <select name="sex" required>
+            <option selected value="">Selecione</option>
+            <option value="feminino">Mulher</option>
+            <option value="masculino">Homem</option>
+            <option value="outro">Outro</option>
+          </select>
+        </label>
+
+        <label>
+          Renda:
+          <input name="income" type="number" min="1" required />
+        </label>
+
+        <label>
+          Habilidades:
+          <input
+            class="xl"
+            name="skills"
+            skills="income"
+            type="text"
+            placeholder="Linguagens de programação separadas por ';'"
+            required />
+        </label>
+
+        <input type="submit" value="Adicionar" />
+      </form>
+    </section>
+
+    <section class="people-list">
+      <h3 class="sub-title">Lista de pessoas</h3>
+
+      <form class="inline" id="search-form">
+        <label>
+          Pesquisar:
+          <input
+            name="search"
+            type="text"
+            placeholder="Nome, idade, sexo ou habilidades"
+            required />
+        </label>
+      </form>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Id</th>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Sexo</th>
+            <th>Renda</th>
+            <th>Habilidades</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section class="statistics">
+      <h3 class="sub-title">Estatísticas</h3>
+
+      <div class="content">
+        <dl>
+          <dt>N.º de pessoas:</dt>
+          <dd id="totalNumberOfPeople"></dd>
+
+          <dt>N.º de pessoas filtradas:</dt>
+          <dd id="currentNumberOfPeople"></dd>
+
+          <dt>Primeiro nome que mais aparece:</dt>
+          <dd id="firstNameApersMoreOften"></dd>
+
+          <dt>N.º de primeiros nomes únicos:</dt>
+          <dd id="uniqueFirstName"></dd>
+
+          <dt>Maior Idade:</dt>
+          <dd id="olderAge"></dd>
+
+          <dt>Menor idade:</dt>
+          <dd id="youngerAge"></dd>
+
+          <dt>Média de idade:</dt>
+          <dd id="averageAge"></dd>
+        </dl>
+
+        <dl>
+          <dt>Top 3 pessoas mais bem pagas:</dt>
+          <dd id="top3HighestIncome"></dd>
+
+          <dt>Maior salário:</dt>
+          <dd id="highestIncome"></dd>
+
+          <dt>Menor salário:</dt>
+          <dd id="lowestIncome"></d>
+
+          <dt>Média salarial:</dt>
+          <dd id="averageIncome"></dd>
+
+          <dt>N.º de sexos Femininos:</dt>
+          <dd id="femininePersons"></dd>
+
+          <dt>N.º de sexos Masculino:</dt>
+          <dd id="masculinePersons"></dd>
+
+          <dt>N.º de sexos Outro:</dt>
+          <dd id="otherPersons"></dd>
+        </dl>
+
+        <dl>
+          <dt>Todas as linguagens:</dt>
+          <dd id="allLanguages"></dd>
+
+          <dt>Top 3 linguagens:</dt>
+          <dd id="top3Languages"></dd>
+
+          <dt>N.º de linguagens diferentes:</dt>
+          <dd id="uniqueLanguages"></dd>
+        </dl>
+      </div>
+    </section>
+
+    <script src="./javascript/updateStatistcs.js"></script>
+    <script src="./javascript/ui.js"></script>
+    <script src="./javascript/autoIncrement.js"></script>
+    <script src="./javascript/formatters.js"></script>
+    <script src="./javascript/main.js"></script>
+  </body>
+</html>

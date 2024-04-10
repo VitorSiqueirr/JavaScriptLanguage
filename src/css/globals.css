@@ -1,0 +1,44 @@
+body {
+  display: grid;
+  grid-template:
+    "header header"
+    "add-people add-people"
+    "people-list statistics";
+  background-color: rgb(238, 238, 238);
+}
+
+.header {
+  grid-area: header;
+  font-size: 2.5rem;
+  text-align: center;
+}
+
+.add-people {
+  grid-area: add-people;
+}
+
+.people-list {
+  grid-area: people-list;
+}
+
+.statistics {
+  grid-area: statistics;
+}
+
+section {
+  margin: 10px;
+}
+
+.sub-title {
+  font-size: 2rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
