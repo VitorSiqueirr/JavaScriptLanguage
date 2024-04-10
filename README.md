@@ -1,7 +1,5 @@
 # Desafio Linguagem JavaScript by Vitor Siqueira
 
-Repositório: https://gitlab.com/codeminer-42/trainee-projects/01-2024/linguagem-javascript
-
 Caminho para o desafio: `src/index.html`
 
 
